@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# WEATHER APP 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This project is part of Javascript Module with the aim of building a weather application that consumes an API with plain Javascript
 
-## Available Scripts
+<p align="center">
+    <a href="https://img.shields.io/badge/Microverse-blueviolet" alt="Contributors">
+        <img src="https://img.shields.io/badge/Microverse-blueviolet" /></a>
+    <a href="https://www.javascript.com/" alt="JS">
+        <img src="https://img.shields.io/badge/javaScript-ES6-yellow" /></a>
+    <a href="https://webpack.js.org//" alt="Webpack">
+        <img src="https://img.shields.io/badge/Webpack.js-5.21.2-blue" /></a>
+    <a href="https://eslint.org/" alt="Eslint">
+        <img src="https://img.shields.io/badge/eslint-6.8.0-red" /></a>
+    <a href="https://stylelint.io/" alt="Stylelint">
+        <img src="https://img.shields.io/badge/Stylelint-13.3.x-green" /></a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+    <br />
+    <br />&#10023;
+    <a href="#Prerequisites">Watch the Live Version</a> &#10023;
+    <a href="#Prerequisites">Prerequisites</a> &#10023;
+    <a href="#Getting-Started">Getting Started</a> &#10023;
+    <a href="#Usage">Usage</a> &#10023;
+    <a href="#Contributing">Contributing</a> &#10023;
+    <a href="#Author">Author</a> &#10023;
+    <a href="#Show-your-support">Show your support</a> &#10023;
+    <a href="#License">License</a> &#10023;
+    <a href="#Acknowledgments">Acknowledgments</a> &#10023;
+    <a href="https://github.com/Rashad-Muntar/to-do">Report Bug</a>&#10023;
 
-### `npm start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<b>Weather app</b> The main goal of this project is to understand how to wor with API modules using webpack and more advanced ES6 features. This application fetches the current weather of a city or users any desired location. User is able to toggle between temperature Units
 
-### `npm test`
+##Homepage
+![Screenshot from 2021-06-24 01-16-04](https://user-images.githubusercontent.com/58520480/123187521-dbe8b080-d489-11eb-8e64-dae686742992.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Watch the Live Version
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Live Demo](https://rashad-muntar.github.io/weather--app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- JavaScript ES6
+- Text Editor
+- Git
+- NodeJS
+- Webpack
+- OpenWeather API Key
 
-### `npm run eject`
+## Getting API from OpenWeather
+- Go to `https://openweathermap.org`
+- Create an accont
+- Select the API service from the API page
+- Use API in the application
+- 
+## Getting Started
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal :
+   ```bash
+   $ git clone https://github.com/Rashad-Muntar/weather--app.git
+   ```
+4. Run `cd weather-app`
+5. Install the needed dependencies 
+    ```bash
+    $ npm install
+    ```
+6. run
+    ```bash
+    npm run build
+    ``` 
+    to bundle scripts with **_webpack_** a static module bundler for modern JavaScript applications
+7. In develoment mode run 
+    ```bash
+    npm run start
+    ```
+    This will allow you to watch changes in entry files
+8. Run the unit tests and make sure they all pass
+    ```bash
+    npm run test
+    ```
+9. User can use the default API key for developement or you can copy pase you customized API Key.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Usage
+Lauch the local version of this project opening the `./dist/index.html` file in the browser
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Feel free to check the [issues page](https://github.com/Rashad-Muntar/to-do/issues).
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Rashad Muntar**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@Rashad-Muntar](https://github.com/Rashad-Muntar)
+- Twitter - [@RashadToure](https://twitter.com/RashadToure)
+- LinkedIn: [Rashad Muntar](https://www.linkedin.com/in/rashad-muntar/)
 
-### Code Splitting
+### Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License
