@@ -48,6 +48,7 @@
 - React
 - Buildpack
 - Heroku
+- Code Editor(VScode)
 
 
 ### Usage
@@ -58,17 +59,11 @@
 5. Open the vscode terminal and run the application by typing `npm start` and hit enter.
 
 
-## Prerequisite
-- Node.js
-- Webpack
-- Code editor(VScode)
-
-
 ## Contributing
 
 This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-Feel free to check the [issues page](https://github.com/Rashad-Muntar/to-do/issues).
+Feel free to check the [issues page](https://github.com/Rashad-Muntar/math-magician/issues).
 
 ## Author
 
