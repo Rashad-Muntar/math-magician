@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 import Display from './Display';
 import ButtonsPanel from './ButtonPanel';
 
