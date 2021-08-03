@@ -17,7 +17,7 @@ const ButtonsPanel = () => (
       <Buttons btnName="X" />
     </div>
     <div>
-      <Buttons btnName="3" />
+      <Buttons btnName="4" />
       <Buttons btnName="5" />
       <Buttons btnName="6" />
       <Buttons btnName="-" />
