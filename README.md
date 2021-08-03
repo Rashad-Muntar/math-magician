@@ -52,10 +52,10 @@
 
 
 ### Usage
-1. Navigate the reposatory of this application https://github.com/Rashad-Muntar/math-magician.git
+1. Navigate to the reposatory of this application https://github.com/Rashad-Muntar/math-magician.git
 2. Clone the reposatory by using the `git clone` command in your terminal
 3. `cd` into the clone reposatory
-4. Open the code base using any code editor or your choice, preferably "visula studio code editor"
+4. Open the code base using any code editor or your choice, preferably "visual studio code editor"
 5. Open the vscode terminal and run the application by typing `npm start` and hit enter.
 
 
