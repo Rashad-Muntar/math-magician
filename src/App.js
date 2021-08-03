@@ -1,9 +1,12 @@
 import './App.css';
+import Display from './Display';
+import ButtonsPanel from './ButtonPanel';
 
 const App = () => (
   <div className="App">
     <header className="App-header">
-      <h1>Hellow World !</h1>
+      <Display />
+      <ButtonsPanel />
     </header>
   </div>
 );
