@@ -35,6 +35,9 @@
 
 <b>React Calcultor</b> The main goal of this project is to understand how to work with react and it components as well as passing props and using states
 
+## ScreeShot
+![Screenshot from 2021-08-05 23-43-45](https://user-images.githubusercontent.com/58520480/128435209-76fe566c-dc48-4379-a83a-ded17c78cc64.png)
+
 
 ## Watch the Live Version
 
