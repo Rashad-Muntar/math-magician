@@ -1,17 +1,18 @@
 import Big from 'big.js';
 
+let result;
 const operate = (numberOne, numberTwo, operation) => {
   const [one, two] = [Big(numberOne), Big(numberTwo)];
   if (operation === '+') {
-    return one.plus(two).toString();
+    result = one.plus(two).toString();
   } if (operation === '-') {
-    return one.minus(two).toString();
+    result = one.minus(two).toString();
   } if (operation === 'X') {
-    return one.times(two).toString();
+    result = one.times(two).toString();
   } if (operation === '÷') {
-    return one.div(two).toString();
+    result = one.div(two).toString();
   }
-  return 0;
+  return result.toString();
 };
 
 export default operate;

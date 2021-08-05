@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './ButtonsPanel.css';
 
 const Display = ({ result }) => (
-  <h2>{result}</h2>
+  <div className="displayArea">
+    <h2>{result}</h2>
+  </div>
 );
 
 Display.defaultProps = {

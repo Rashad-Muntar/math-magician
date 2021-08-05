@@ -1,42 +1,53 @@
 /* eslint-disable consistent-return */
 import operate from './operate';
 
-const Calculator = ({ total, next, operation }, btnName) => {
+const Calculator = (data, btnName) => {
   const symbols = ['+', '-', '*', '÷'];
+  let { total, next, operation } = data;
+  const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   if (btnName === '+/-') {
-    if (total) {
-      return total * -1;
-    }
-    if (next) {
-      return next * -1;
-    }
-  }
-  if (btnName === 'AC') {
+    if (total) (total *= (-1));
+    if (next) (next *= (-1));
+  } else if (btnName === 'AC') {
     return { total: null, next: null, operation: null };
+  } else if (btnName === '%') {
+    if (total && next && operation) {
+      next = (0.01 * operate(total, next, operation)).toString();
+    } else {
+      next = (0.01 * total).toString();
+    }
+  } else if (btnName === '=') {
+    if (total && next && operation) {
+      total = operate(total, next, operation);
+      next = null;
+      operation = null;
+    }
+  } else if (btnName === '.') {
+    if (next) {
+      return { total, next: `${next}.`, operation };
+    }
+    if (total) {
+      return { total: `${total}.`, next, operation };
+    }
+    return { total: '0.', next, operation };
   }
 
-  if (btnName === '%') {
-    if (total) {
-      return (0.10 * total);
-    }
-    if (next) {
-      return (0.10 * next);
-    }
+  if ((total && next && operation) && symbols.includes(btnName)) {
+    total = operate(total, next, operation);
+    next = null;
+    operation = '=';
   }
 
   if (symbols.includes(btnName)) {
-    if (btnName === '=' && symbols.includes(btnName)) {
-      if (total && next && operation) {
-        return { total: operate(total, next, operation), operation: null, next: null };
-      }
-      if (total && !next && !operation) {
-        return total;
-      } if (total && !next && operation) {
-        return { total, operation, next: null };
-      }
-    }
+    operation = btnName;
+  } else if (operation && nums.includes(btnName)) {
+    next = next ? next + btnName : btnName;
+  } else if (nums.includes(btnName)) {
+    total = total ? total + btnName : btnName;
   }
+
+  return { total, next, operation };
 };
 
 export default Calculator;
