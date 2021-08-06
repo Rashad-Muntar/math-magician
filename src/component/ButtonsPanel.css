@@ -1,35 +1,35 @@
-.btnPanel{
-    width: 100%;
-  }
-  
-  .btnPanel button{
-    width: 100%;
-    height: 80px;
-    font-size: 3em;
-    font-weight: 700;
-    color: orangered;
-  }
+.btnPanel {
+  width: 100%;
+}
 
-  .rows{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
+.btnPanel button {
+  width: 100%;
+  height: 80px;
+  font-size: 3em;
+  font-weight: 700;
+  color: orangered;
+}
 
-  .lastRow .equal{
-    width: 50%;
-  }
+.rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .displayArea{
-    background-color: black;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 20px;
-  }
+.lastRow .equal {
+  width: 50%;
+}
 
-  .displayArea h2{
-    color: white;
-    font-size: 3em;
-    text-align: right;
-  }
+.displayArea {
+  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.displayArea h2 {
+  color: white;
+  font-size: 3em;
+  text-align: right;
+}
