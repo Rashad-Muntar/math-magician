@@ -3,41 +3,45 @@ import PropTypes from 'prop-types';
 import Buttons from './Button';
 import './ButtonsPanel.css';
 
-const ButtonsPanel = ({ clickHandler }) => (
-  <>
-    <div className="btnPanel">
-      <div className="rows">
-        <Buttons btnName="AC" clickHandler={clickHandler} />
-        <Buttons btnName="+/-" clickHandler={clickHandler} />
-        <Buttons btnName="%" clickHandler={clickHandler} />
-        <Buttons btnName="÷" clickHandler={clickHandler} />
+const ButtonsPanel = ({ clickHandler }) => {
+  const handleClick = (btnName) => clickHandler(btnName);
+
+  return (
+    <>
+      <div className="btnPanel">
+        <div className="rows">
+          <Buttons btnName="AC" clickHandler={handleClick} />
+          <Buttons btnName="+/-" clickHandler={handleClick} />
+          <Buttons btnName="%" clickHandler={handleClick} />
+          <Buttons btnName="÷" clickHandler={handleClick} />
+        </div>
+        <div className="rows">
+          <Buttons btnName="7" clickHandler={handleClick} />
+          <Buttons btnName="8" clickHandler={handleClick} />
+          <Buttons btnName="9" clickHandler={handleClick} />
+          <Buttons btnName="X" clickHandler={handleClick} />
+        </div>
+        <div className="rows">
+          <Buttons btnName="4" clickHandler={handleClick} />
+          <Buttons btnName="5" clickHandler={handleClick} />
+          <Buttons btnName="6" clickHandler={handleClick} />
+          <Buttons btnName="-" clickHandler={handleClick} />
+        </div>
+        <div className="rows">
+          <Buttons btnName="1" clickHandler={handleClick} />
+          <Buttons btnName="2" clickHandler={handleClick} />
+          <Buttons btnName="3" clickHandler={handleClick} />
+          <Buttons btnName="+" clickHandler={handleClick} />
+        </div>
+        <div className="rows lastRow">
+          <Buttons btnName="." clickHandler={handleClick} />
+          <Buttons btnName="0" clickHandler={handleClick} />
+          <Buttons btnName="=" clickHandler={handleClick} />
+        </div>
       </div>
-      <div className="rows">
-        <Buttons btnName="7" clickHandler={clickHandler} />
-        <Buttons btnName="8" clickHandler={clickHandler} />
-        <Buttons btnName="9" clickHandler={clickHandler} />
-        <Buttons btnName="X" clickHandler={clickHandler} />
-      </div>
-      <div className="rows">
-        <Buttons btnName="4" clickHandler={clickHandler} />
-        <Buttons btnName="5" clickHandler={clickHandler} />
-        <Buttons btnName="6" clickHandler={clickHandler} />
-        <Buttons btnName="-" clickHandler={clickHandler} />
-      </div>
-      <div className="rows">
-        <Buttons btnName="1" clickHandler={clickHandler} />
-        <Buttons btnName="2" clickHandler={clickHandler} />
-        <Buttons btnName="3" clickHandler={clickHandler} />
-        <Buttons btnName="+" clickHandler={clickHandler} />
-      </div>
-      <div className="rows lastRow">
-        <Buttons btnName="." clickHandler={clickHandler} />
-        <Buttons btnName="0" clickHandler={clickHandler} />
-        <Buttons btnName="=" clickHandler={clickHandler} />
-      </div>
-    </div>
-  </>
-);
+    </>
+  );
+};
 
 ButtonsPanel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
