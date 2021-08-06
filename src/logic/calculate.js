@@ -2,7 +2,7 @@
 import operate from './operate';
 
 const Calculator = (data, btnName) => {
-  const symbols = ['+', '-', '*', '÷'];
+  const symbols = ['+', '-', 'X', '÷'];
   let { total, next, operation } = data;
   const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
@@ -13,9 +13,9 @@ const Calculator = (data, btnName) => {
     return { total: null, next: null, operation: null };
   } else if (btnName === '%') {
     if (total && next && operation) {
-      next = (0.01 * operate(total, next, operation)).toString();
+      next = (0.01 * operate(total, next, operation)).toFixed(2).toString();
     } else {
-      next = (0.01 * total).toString();
+      next = (0.01 * total).toFixed(2).toString();
     }
   } else if (btnName === '=') {
     if (total && next && operation) {
