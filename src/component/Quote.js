@@ -11,7 +11,6 @@ const Quote = () => (
     <p>
       –William Paul ThurstonHome
     </p>
-    {/* <img src={img} alt="sign" /> */}
   </div>
 );
 
