@@ -14,5 +14,4 @@ describe('Quote', () => {
   test('renders only the Quote component', () => {
     expect(screen.queryByText(/We Love Math/)).not.toBeInTheDocument();
   });
-
 });

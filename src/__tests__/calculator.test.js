@@ -7,4 +7,3 @@ describe('Calculator component testing', () => {
     expect(tree).toMatchSnapshot();
   });
 });
-
