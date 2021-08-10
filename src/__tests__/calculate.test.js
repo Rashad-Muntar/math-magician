@@ -52,7 +52,6 @@ describe('calculate', () => {
     expect(JSON.parse(result.total)).toEqual(14);
   });
 
-
   it('resets the result values', () => {
     result = calculate(result, 'AC');
     expect((result)).toEqual({ total: null, next: null, operation: null });

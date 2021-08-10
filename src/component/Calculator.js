@@ -4,7 +4,6 @@ import ButtonsPanel from './ButtonPanel';
 import Calculator from '../logic/calculate';
 
 class CalculatorPage extends Component {
-  
   constructor(props) {
     super(props);
     this.state = {

@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router';
 import Home from '../component/Home';
 import Navbar from '../component/Navbar';
 import Quote from '../component/Quote';
-import CalculatorPage from '../component/Calculator'
+
 
 jest.mock('../component/Home');
 jest.mock('../component/Quote');
@@ -47,23 +47,6 @@ describe("Tests for App Router", () => {
       expect(screen.getByText("Navbar")).toBeInTheDocument();
       expect(screen.getByText("Quote")).toBeInTheDocument();
     });
-  
-    test("Should render caculator", () => {
-        // Arrange
-        Navbar.mockImplementation(() => <div>Navbar</div>);
-        CalculatorPage.mockImplementation(() => <div>calculator</div>);
-    
-        // Act
-        render(
-          <MemoryRouter initialEntries={['/calculator/']}>
-            <App/>
-          </MemoryRouter>
-        );
-    
-        // Assert
-        expect(screen.getByText("Navbar")).toBeInTheDocument();
-        expect(screen.getByText("caculator")).toBeInTheDocument();
-      });
   
    
   });
