@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote Renders Quote component 1`] = `
+<div
+  className="quoteWrapper"
+>
+  <h1
+    className={true}
+  >
+    Quote of the day
+  </h1>
+  <p>
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.
+  </p>
+  <p>
+    –William Paul ThurstonHome
+  </p>
+</div>
+`;
+
+exports[`Quote Renders calculator component 1`] = `
+<div
+  className="quoteWrapper"
+>
+  <h1
+    className={true}
+  >
+    Quote of the day
+  </h1>
+  <p>
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.
+  </p>
+  <p>
+    –William Paul ThurstonHome
+  </p>
+</div>
+`;
