@@ -9,7 +9,7 @@ describe('Home', () => {
     render(<Home />);
   });
 
-  it('Renders Quote component', () => {
+  it('Renders Home component', () => {
     const tree = renderer.create(<Home />).toJSON();
     expect(tree).toMatchSnapshot();
   });

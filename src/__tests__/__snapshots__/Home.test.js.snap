@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Home Renders Huote component 1`] = `
+<div
+  className="homeWrapper"
+>
+  <img
+    alt="home"
+    className="homeImg"
+    src="./download.jpeg"
+  />
+  <p>
+    WE LOVE MATH
+  </p>
+</div>
+`;
+
 exports[`Home Renders Quote component 1`] = `
 <div
   className="homeWrapper"
